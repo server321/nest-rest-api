@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "d18b59c5-f9db-4d4b-9bf5-a7a757e4f379",
+		"name": "NestJS Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/employees/6122bc03f5b83844041ec924",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"6122bc03f5b83844041ec924"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/employees/6122b9f07fa2e836382b2acb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"6122b9f07fa2e836382b2acb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Timotybdgg\",\r\n    \"lastName\": \"Dulton\",\r\n    \"email\": \"timoty.dulton@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/employees/6120d72aefa72a49f0649f00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"6120d72aefa72a49f0649f00"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post including file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Timotybdgg\",\r\n    \"lastName\": \"Dulton\",\r\n    \"email\": \"timoty.dulton@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/employees/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get profile image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/employees/profile-image/20210812_201842_a3453e23-d72f-4d91-8cb4-1c52bec25883.jpg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"profile-image",
+						"20210812_201842_a3453e23-d72f-4d91-8cb4-1c52bec25883.jpg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get small profile image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/employees/profile-image-small/20210812_201842_a3453e23-d72f-4d91-8cb4-1c52bec25883.jpg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"profile-image-small",
+						"20210812_201842_a3453e23-d72f-4d91-8cb4-1c52bec25883.jpg"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
